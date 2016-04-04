@@ -1,0 +1,6 @@
+line in a file
+<<<<<<< HEAD
+=======
+second line in file
+>>>>>>> parent of fa42561... second commit
+third line in file blah

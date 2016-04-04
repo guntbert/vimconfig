@@ -1,0 +1,97 @@
+host syslogs
+	hostname 172.16.1.65
+	user reiter
+	IdentityFile /home/re/.ssh/xbox+htlx-key.key
+
+#host intra
+#	hostname 172.16.1.65
+#	user reiter
+#	IdentityFile /home/re/.ssh/xbox+htlx-key.key
+
+host ansible
+	hostname 172.16.1.17
+	user reiterg
+	ForwardAgent yes
+
+host cacti
+	hostname 172.16.1.53
+	user reiterg
+	# IdentityFile /home/re/.ssh/xbox+htlx-key.key
+
+host proxy
+	hostname 172.16.1.64
+	user reiter
+	IdentityFile /home/re/.ssh/xbox+htlx-key.key
+
+host userver
+	hostname 172.31.199.7
+	user usadmin
+
+host usql
+	hostname 172.31.199.9
+	user usadmin
+	identityFile ~/.ssh/xbox+htlx-key.key
+
+host owncloud
+	hostname owncloud.guntbert.net
+	user root
+	identityFile ~/ssh-keys/digitalocean
+
+host ffproxy
+	hostname 10.0.0.253
+	user reiter
+	IdentityFile /home/re/.ssh/xbox+htlx-key.key
+
+host dmz-fwbridge
+	hostname 192.168.16.91
+	user reiterg
+	IdentityFile /home/re/.ssh/xbox+htlx-key.key
+
+host dmz-intra
+	hostname 192.168.16.5
+	user reiterg
+	IdentityFile /home/re/.ssh/xbox+htlx-key.key
+
+host dmz-moodle
+	hostname 192.168.16.4
+	user reiterg
+	IdentityFile /home/re/.ssh/xbox+htlx-key.key
+
+host dmz-nginx
+	hostname 192.168.16.2
+	user reiterg
+	IdentityFile /home/re/.ssh/xbox+htlx-key.key
+
+host radius-kolleg
+	hostname 172.16.1.8
+	user reiterg
+	IdentityFile /home/re/.ssh/xbox+htlx-key.key
+
+host radius-teacher
+	hostname 172.16.1.7
+	user reiterg
+	IdentityFile /home/re/.ssh/xbox+htlx-key.key
+
+host old-wlan
+	hostname 192.168.0.102
+	IdentityFile /home/re/.ssh/new2old.key
+
+host old-eth
+	hostname 172.17.2.21
+	IdentityFile /home/re/.ssh/new2old.key
+
+host gserv
+	hostname gserv.guntbert.net
+	user guser
+
+host gserv2
+	hostname 31.170.110.169
+	user guser
+# switches
+host coreswitch
+	hostname 172.16.25.100
+host sw-edv2-1
+	hostname 172.16.25.109
+host sw-edv2-2
+	hostname 172.16.25.121
+	user manager

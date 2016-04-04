@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<title> play with js</title>
+		<script>
+window.onload=function()
+{
+var canvas = document.getElementById("paper");
+var ctx = canvas.getContext("2d");
+ctx.fillstyle="black";
+ctx.fillRect(0,0,canvas.width/2,canvas.height/2);
+}
+		</script>
+	</head>
+	<body>
+		<canvas id="paper" width="200" height="200">
+		no canvas support here :-(
+		</canvas>
+	</body>
+</html>

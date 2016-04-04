@@ -1,0 +1,27 @@
+using System.Windows.Forms;
+using System.Drawing;
+using System;
+
+public class Simple : Form
+{
+	    public Simple()
+		        {
+				       Text = "Icon";
+				       try
+				       {
+				       Icon = new Icon("eb.ico");
+				       } catch (Exception e)
+				       {
+					       Console.WriteLine(e.Message);
+					       Environment.Exit(1);
+				       }
+				              Size = new Size(250, 200);
+					             CenterToScreen();
+						         }
+
+	        static public void Main()
+			    {
+				           Application.Run(new Simple());
+					       }
+}
+

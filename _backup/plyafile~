@@ -1,0 +1,41 @@
+autoc
+:
+using System;
+1) oberhalb
+using System;
+using System.Linq;
+namespace CodeGolfScratchpad
+{
+	class MainClass
+	{
+		public static void Main (string[] args)
+		{
+			foreach(var s in Enumerable.Range(1,100).Select(n=>n%3==0?n%5==0?"FizzBuzz":"Fizz":n%5==0?"Buzz":n.ToString()))
+				System.Console.WriteLine(s);
+
+		}
+	
+	}
+}
+
+
+irgendeine Sache
+
+
+2) unterhalb
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplicationVS2015
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+            Console.ReadLine();
+        }
+    }
+}

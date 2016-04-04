@@ -1,0 +1,11 @@
+cat
+dog
+<<<<<<< HEAD
+octoman
+||||||| merged common ancestors
+octopus
+=======
+octodog
+>>>>>>> octodog
+octocat
+

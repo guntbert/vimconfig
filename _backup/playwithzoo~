@@ -1,0 +1,15 @@
+#!/bin/bash
+set -x
+mkdir zoo
+cd zoo
+git init
+echo "cat" > animals.txt
+echo "dog" >> animals.txt
+echo "octopus" >> animals.txt
+echo "octocat" >> animals.txt
+git add animals.txt
+git commit -m "initial commit"
+git checkout -b octodog
+sed -i 's/octopus/octodog/' animals.txt
+git add animals.txt
+git commit -m "replace ocotpus with octodog"
